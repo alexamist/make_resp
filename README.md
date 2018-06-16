@@ -8,7 +8,7 @@ Generate `.mol2`, `.frcmod` and `.pdb` with calculated RESP charges, for Molecul
 
 **packages needed:** Gaussian; marathon (https://github.com/dudektria/marathon) - for using Gaussian (or change the line where marathon is called, for the method you submit jobs in Gaussian)
 
-**usage:** ./make-esp.sh xyz(without .xyz) opt_level(scape special characters, for gaussian input) nprocs-opt nprocs-esp
+**usage:** `./make-esp.sh` `xyz(without .xyz)` `opt_level(scape special characters, for gaussian input)` `nprocs-opt` `nprocs-esp`
 
 **ex:** `./make-esp.sh` `compound` `MP2/6-311G\*` `8` `2`
 
@@ -22,6 +22,6 @@ Before, use `make_resp.sh` for generating compound.mol2, compound.frcmod and com
 
 **packages needed:** antechamber; parmchk
 
-**usage:** ./make-resp.sh  esp_output(without _esp.out)  residue_name
+**usage:** `./make-resp.sh`  `esp_output(without _esp.out)`  `residue_name`
 
    **ex:** `./make-resp.sh` `compound` `RES`
