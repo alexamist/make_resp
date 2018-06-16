@@ -12,7 +12,9 @@ Generate .mol2, .frcmod and .pdb with calculated RESP charges, for Molecular Dyn
 
 ex: ./make-esp.sh compound MP2/6-311G\* 8 2
 
-   or  nohup ./make-esp.sh compound MP2/6-311G\* 8 2 &  (still running, even if you exit terminal, in background)
+   or  
+
+   nohup ./make-esp.sh compound MP2/6-311G\* 8 2 &  (still running, even if you exit terminal, in background)
 
 Before, use make_resp.sh for generating compound.mol2, compound.frcmod and compound.pdb with calculated RESP charges.
 
@@ -23,4 +25,3 @@ Before, use make_resp.sh for generating compound.mol2, compound.frcmod and compo
 *usage: ./make-resp.sh  esp_output(without _esp.out)  residue_name
 
    ex: ./make-resp.sh compound RES
-
