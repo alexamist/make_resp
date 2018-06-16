@@ -6,8 +6,6 @@ Generate `.mol2`, `.frcmod` and `.pdb` with calculated RESP charges, for Molecul
 First, use `make_esp.sh` for run an optimization of your compound (in your desired level of theory) and a single point for ESP calculation, with HF/6-31G* (protocol for RESP charges, read more in https://pubs.acs.org/doi/abs/10.1021/j100142a004). 
 For neutral molecules in a singlet state, otherwise, change input generation section of make_esp.sh!
 
-Press enter when gaussian run finishes.
-
 **files needed:** compound.xyz
 
 **packages needed:** Gaussian; marathon (https://github.com/dudektria/marathon) - for using Gaussian (or change the line where marathon is called, for the method you submit jobs in Gaussian)
@@ -19,6 +17,8 @@ Press enter when gaussian run finishes.
    or  
 
    `nohup` `./make_esp.sh` `compound` `MP2/6-311G\*` `8` `2` `&`  (still running, even if you exit terminal, in background)
+
+Press enter each gaussian run finishes.
 
 ## make-resp.sh
 Before, use `make_resp.sh` for generating compound.mol2, compound.frcmod and compound.pdb with calculated RESP charges.
