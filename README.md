@@ -3,7 +3,8 @@ Scripts for calculating RESP charges with Gaussian, starting only with `.xyz` fi
 Generate `.mol2`, `.frcmod` and `.pdb` with calculated RESP charges, for Molecular Dynamic simulations in Amber.
 
 ## make-esp.sh
-First, use `make_esp.sh` for run an optimization of your compound (in your desired level of theory) and a single point for ESP calculation, with HF/6-31G* (protocol for RESP charges, read more in https://pubs.acs.org/doi/abs/10.1021/j100142a004).
+First, use `make_esp.sh` for run an optimization of your compound (in your desired level of theory) and a single point for ESP calculation, with HF/6-31G* (protocol for RESP charges, read more in https://pubs.acs.org/doi/abs/10.1021/j100142a004). 
+For neutral molecules in a singlet state, otherwise, change input generation section of make_esp.sh!
 
 **files needed:** compound.xyz
 
